@@ -211,6 +211,67 @@ MonoBehaviour:
   screenLocs: 0
   camWidth: 0
   camHeight: 0
+--- !u!1001 &165542300
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1941756422}
+    m_Modifications:
+    - target: {fileID: 3155258121264133427, guid: 41fc086f1bf7b37409680cc6bfb3fbdc, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155258121264133427, guid: 41fc086f1bf7b37409680cc6bfb3fbdc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155258121264133427, guid: 41fc086f1bf7b37409680cc6bfb3fbdc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155258121264133427, guid: 41fc086f1bf7b37409680cc6bfb3fbdc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155258121264133427, guid: 41fc086f1bf7b37409680cc6bfb3fbdc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155258121264133427, guid: 41fc086f1bf7b37409680cc6bfb3fbdc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155258121264133427, guid: 41fc086f1bf7b37409680cc6bfb3fbdc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155258121264133427, guid: 41fc086f1bf7b37409680cc6bfb3fbdc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155258121264133427, guid: 41fc086f1bf7b37409680cc6bfb3fbdc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155258121264133427, guid: 41fc086f1bf7b37409680cc6bfb3fbdc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3155258121264133427, guid: 41fc086f1bf7b37409680cc6bfb3fbdc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8433414297031892328, guid: 41fc086f1bf7b37409680cc6bfb3fbdc, type: 3}
+      propertyPath: m_Name
+      value: Weapon
+      objectReference: {fileID: 0}
+    - target: {fileID: 9016498165174741406, guid: 41fc086f1bf7b37409680cc6bfb3fbdc, type: 3}
+      propertyPath: _type
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 41fc086f1bf7b37409680cc6bfb3fbdc, type: 3}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -403,11 +464,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1680a761ade542047a31df4f9d91e292, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spawnEnemies: 1
   prefabEnemies:
   - {fileID: 2399153745985088658, guid: 4876237b9d2993b4299f6fb1697e594d, type: 3}
   enemySpawnPerSecond: 0.5
   enemyInsetDefault: 1.5
   gameRestartDelay: 2
+  weaponDefinitions:
+  - type: 1
+    letter: B
+    powerUpColor: {r: 1, g: 1, b: 1, a: 1}
+    weaponModelPrefab: {fileID: 919132149155446097, guid: 0522e2d6add5631469273543744ebf7f, type: 3}
+    projectilePrefab: {fileID: 4747885241618071170, guid: 33974fa771f39c04089626f902829684, type: 3}
+    projectileColor: {r: 1, g: 1, b: 1, a: 1}
+    damageOnHit: 1
+    damagePerSec: 0
+    delayBetweenShots: 0.2
+    velocity: 50
+  - type: 2
+    letter: S
+    powerUpColor: {r: 0.061053626, g: 0.9245283, b: 0.7958455, a: 1}
+    weaponModelPrefab: {fileID: 919132149155446097, guid: 8b6e5debbe11f9241ade9814e3d16d70, type: 3}
+    projectilePrefab: {fileID: 4747885241618071170, guid: 33974fa771f39c04089626f902829684, type: 3}
+    projectileColor: {r: 0.0627451, g: 0.9254902, b: 0.79607844, a: 1}
+    damageOnHit: 1
+    damagePerSec: 0
+    delayBetweenShots: 0.4
+    velocity: 50
+  - type: 6
+    letter: O
+    powerUpColor: {r: 0.14490893, g: 0.8930817, b: 0.098295055, a: 1}
+    weaponModelPrefab: {fileID: 0}
+    projectilePrefab: {fileID: 0}
+    projectileColor: {r: 0, g: 0, b: 0, a: 0}
+    damageOnHit: 0
+    damagePerSec: 0
+    delayBetweenShots: 0
+    velocity: 50
 --- !u!114 &963194230
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -660,3 +753,8 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &1941756422 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 974008312187329754, guid: ae3a657191efe7040b52cc85f1d490eb, type: 3}
+  m_PrefabInstance: {fileID: 1384345119}
+  m_PrefabAsset: {fileID: 0}
