@@ -95,8 +95,8 @@ GameObject:
   - component: {fileID: 1743713488516314313}
   - component: {fileID: 7817639879985021274}
   - component: {fileID: 9185519999970266969}
-  - component: {fileID: 5952841596813380189}
-  - component: {fileID: 3049648392743345858}
+  - component: {fileID: 8163422638529448398}
+  - component: {fileID: 4839005280765923189}
   m_Layer: 9
   m_Name: enemy4_shield_Front
   m_TagString: Untagged
@@ -185,7 +185,7 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -7471656599575618317, guid: 0124bc53210bf6d488148eb27b996322, type: 3}
---- !u!114 &5952841596813380189
+--- !u!114 &8163422638529448398
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -200,7 +200,7 @@ MonoBehaviour:
   showingColor: 0
   blinkCompleteTime: 0
   ignoreOnCollisionEnter: 0
---- !u!114 &3049648392743345858
+--- !u!114 &4839005280765923189
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -474,8 +474,8 @@ GameObject:
   - component: {fileID: 5788329899310142937}
   - component: {fileID: 5407094474805554665}
   - component: {fileID: 9185519999970266967}
-  - component: {fileID: 8968160632743413291}
-  - component: {fileID: 7351800524693246074}
+  - component: {fileID: 6803389510680601071}
+  - component: {fileID: 581998205764978623}
   m_Layer: 9
   m_Name: enemy4_shield_Right
   m_TagString: Untagged
@@ -491,7 +491,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5079837839100941336}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 59.90287, y: 0.01332164, z: -46.53336}
+  m_LocalPosition: {x: 59.902893, y: 0.013309719, z: -46.53337}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -562,7 +562,7 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -5058095349073789047, guid: 0124bc53210bf6d488148eb27b996322, type: 3}
---- !u!114 &8968160632743413291
+--- !u!114 &6803389510680601071
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -577,7 +577,7 @@ MonoBehaviour:
   showingColor: 0
   blinkCompleteTime: 0
   ignoreOnCollisionEnter: 0
---- !u!114 &7351800524693246074
+--- !u!114 &581998205764978623
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -973,8 +973,8 @@ GameObject:
   - component: {fileID: 2308019188997004032}
   - component: {fileID: 4346281909414164491}
   - component: {fileID: 9185519999970266968}
-  - component: {fileID: 291105402869104108}
-  - component: {fileID: 7809569765505913299}
+  - component: {fileID: 670676572814336084}
+  - component: {fileID: 6832883192129522375}
   m_Layer: 9
   m_Name: enemy4_shield_Left
   m_TagString: Untagged
@@ -1061,7 +1061,7 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 67890005723777164, guid: 0124bc53210bf6d488148eb27b996322, type: 3}
---- !u!114 &291105402869104108
+--- !u!114 &670676572814336084
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1076,7 +1076,7 @@ MonoBehaviour:
   showingColor: 0
   blinkCompleteTime: 0
   ignoreOnCollisionEnter: 0
---- !u!114 &7809569765505913299
+--- !u!114 &6832883192129522375
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1100,10 +1100,10 @@ GameObject:
   - component: {fileID: 9185519998980853176}
   - component: {fileID: 9185519998980853175}
   - component: {fileID: -2774491618980830915}
-  - component: {fileID: 8291706694650548221}
-  - component: {fileID: -7918893690172783305}
-  - component: {fileID: -8908013893061431220}
-  - component: {fileID: 1983828239454286159}
+  - component: {fileID: 6225851451617899818}
+  - component: {fileID: 8837431503488691320}
+  - component: {fileID: 1811216331533670527}
+  - component: {fileID: 6752108161247791517}
   m_Layer: 9
   m_Name: Enemy_4
   m_TagString: Untagged
@@ -1157,7 +1157,35 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 120
   m_CollisionDetection: 0
---- !u!114 &8291706694650548221
+--- !u!114 &6225851451617899818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9185519998980853174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa23f2606ef173544a18deae31a4f0a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  showingColor: 0
+  blinkCompleteTime: 0
+  ignoreOnCollisionEnter: 0
+--- !u!114 &8837431503488691320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9185519998980853174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 248e968dab3ccfc4092ce84cb4405488, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 10
+--- !u!114 &1811216331533670527
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1175,7 +1203,7 @@ MonoBehaviour:
   score: 100
   powerUpDropChance: 1
   duration: 4
---- !u!114 &-7918893690172783305
+--- !u!114 &6752108161247791517
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1189,35 +1217,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boundsType: 1
   radius: 8
-  keepOnScreen: 0
+  keepOnScreen: 1
   screenLocs: 0
   camWidth: 0
   camHeight: 0
---- !u!114 &-8908013893061431220
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9185519998980853174}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa23f2606ef173544a18deae31a4f0a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  showingColor: 0
-  blinkCompleteTime: 0
-  ignoreOnCollisionEnter: 0
---- !u!114 &1983828239454286159
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9185519998980853174}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 248e968dab3ccfc4092ce84cb4405488, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 10
