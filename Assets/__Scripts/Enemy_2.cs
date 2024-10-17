@@ -47,11 +47,9 @@ public class Enemy_2 : Enemy
         }
 
         float shipRot = rotCurve.Evaluate(u) * 360;
-        //if (p0.x > p1.x) shipRot = -shipRot;
-        //transform.rotation = Quaternion.Euler(0, shipRot, 0);
         transform.rotation = baseRotation * Quaternion.Euler(-shipRot, 0, 0);
 
-        u = u + sinEccentricity * (Mathf.Sin(u * Mathf.PI * 2));
+        u = u + sinEccentricity * (Mathf.Sin(u*Mathf.PI*2));
 
         pos = (1 - u) * p0 + u * p1;
     }

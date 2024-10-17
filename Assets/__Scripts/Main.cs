@@ -14,7 +14,11 @@ public class Main : MonoBehaviour
     public float enemySpawnPerSecond = 0.5f;
     public float enemyInsetDefault = 1.5f;
     public float gameRestartDelay = 2;
+    public GameObject prefabPowerUp;
     public WeaponDefinition[] weaponDefinitions;
+    public eWeaponType[] powerUpFrequency = new eWeaponType[] {
+                            eWeaponType.blaster, eWeaponType.blaster,
+                            eWeaponType.spread, eWeaponType.shield };
 
     private BoundsCheck bndCheck;
 
@@ -66,11 +70,24 @@ public class Main : MonoBehaviour
         S.DelayedRestart();
     }
 
-    static public WeaponDefinition GET_WEAPON_DEFINITION( eWeaponType wt) {
+    static public WeaponDefinition GET_WEAPON_DEFINITION(eWeaponType wt) {
         if (WEAP_DICT.ContainsKey(wt)) {
             return(WEAP_DICT[wt]);
         }
 
         return(new WeaponDefinition());
+    }
+
+    static public void SHIP_DESTROYED(Enemy e){
+        if (Random.value <= e.powerUpDropChance) {
+            int ndx = Random.Range(0, S.powerUpFrequency.Length);
+            eWeaponType pUpType = S.powerUpFrequency[ndx];
+
+            GameObject go = Instantiate<GameObject>( S.prefabPowerUp );
+            PowerUp pUp = go.GetComponent<PowerUp>();
+            pUp.SetType(pUpType);
+
+            pUp.transform.position = e.transform.position;
+        }
     }
 }
